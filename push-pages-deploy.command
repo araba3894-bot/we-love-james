@@ -43,6 +43,10 @@ fi
 git push origin main
 
 echo ""
+echo "Triggering GitHub Pages rebuild…"
+"$GH" api -X POST repos/araba3894-bot/we-love-james/pages/builds >/dev/null 2>&1 || true
+
+echo ""
 echo "Push OK. Wait ~1–2 min for Actions, then on iPhone Safari open:"
 echo "  https://araba3894-bot.github.io/we-love-james/index.html"
 echo ""
