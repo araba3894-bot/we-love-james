@@ -3,3 +3,5 @@
 .nvc_latest_body.js.bak
 .cursor/
 *.log
+.tmp-flicker/
+.tools/
